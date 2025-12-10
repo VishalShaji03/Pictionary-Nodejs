@@ -100,7 +100,7 @@ io.sockets.on('connection', function(socket) {
             if(err) console.log(err);
             else {
                 words = [];
-                content = content.split('\r\n');
+                content = content.split('\n');
 
                 for(var i in lineNumbers)
                     words.push(content[lineNumbers[i]]);
